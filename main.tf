@@ -140,6 +140,7 @@ resource "github_repository" "repository" {
       license_template,
       gitignore_template,
       template,
+      branches, # Workaround for integrations/terraform-provider-github#1037
     ]
   }
 }
